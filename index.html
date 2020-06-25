@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="calcbackend.js"></script>
+</head>
+<body>
+    <div id="calcFrame">
+    <div class="display"><p id="output">0</p></div>
+    <div class="firstCol">
+        <button id="plus" style="background: rgb(202, 200, 198);" value="+" onclick="writeEqn('+')">+</button><br>
+        <button id="seven" value="7" onclick="writeEqn('7')">7</button><br>
+        <button id="four" value="4" onclick="writeEqn('4')">4</button><br>
+        <button id="one" value="1" onclick="writeEqn('1')">1</button><br>
+        <button id="zero" value="0" onclick="writeEqn('0')">0</button>
+    </div>
+    <div class="secondCol">
+        <button id="minus" style="background: rgb(202, 200, 198);" value="-" onclick="writeEqn('-')">-</button><br>
+        <button id="eight" value="8" onclick="writeEqn('8')">8</button><br>
+        <button id="five" value="5" onclick="writeEqn('5')">5</button><br>
+        <button id="two" value="2" onclick="writeEqn('2')">2</button><br>
+        <button id="decimal" value="." onclick="writeEqn('.')">.</button>
+    </div>
+    <div class="thirdCol">
+        <button id="multiply" style="background: rgb(202, 200, 198);" value="*" onclick="writeEqn('*')">*</button><br>
+        <button id="nine" value="9" onclick="writeEqn('9')">9</button><br>
+        <button id="six" value="6" onclick="writeEqn('6')">6</button><br>
+        <button id="three" value="3" onclick="writeEqn('3')">3</button><br>
+        <button id="clearBtn" onclick="clearoutput()">C</button>
+    </div>
+    <div class="fourthCol">
+        <button id="divide" style="background: rgb(202, 200, 198);" value="/" onclick="writeEqn('/')">/</button><br>
+        <button id="equalsTo" style="height: 210px; background: rgb(39, 57, 219);" value="=" onclick="solveEqn()">=</button>
+    </div>
+    </div>
+</body>
+</html>
